@@ -1,0 +1,71 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found dynamixel_sdk: 3.8.4 (/home/colcon_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/colcon_ws/src/dynamixel_wrapper/build/dynamixel_wrapper
+[ 25%] [32mBuilding CXX object CMakeFiles/dynamixel_wrapper.dir/src/dynamixel_wrapper/dynamixel_wrapper.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libdynamixel_wrapper.a[0m
+[ 50%] Built target dynamixel_wrapper
+[ 75%] [32mBuilding CXX object CMakeFiles/position_node.dir/src/examples/position_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable position_node[0m
+[100%] Built target position_node
+-- Install configuration: ""
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/lib/dynamixel_wrapper/libdynamixel_wrapper.a
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/lib/dynamixel_wrapper/position_node
+-- Set runtime path of "/home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/lib/dynamixel_wrapper/position_node" to ""
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/dynamixel_wrapper_config.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/XM430_W350_R.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/PH42_020_S300_R.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/PH54_200_S500_R.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/PH54_100_S500_R.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/XL330.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/model/XC330_T181_T.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/dynamixel_wrapper_configs.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/dynamixel_wrapper.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/include/dynamixel_wrapper/dynamixel_wrapper_base.h
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/ament_index/resource_index/package_run_dependencies/dynamixel_wrapper
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/ament_index/resource_index/parent_prefix_path/dynamixel_wrapper
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/environment/ament_prefix_path.sh
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/environment/ament_prefix_path.dsv
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/environment/path.sh
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/environment/path.dsv
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/local_setup.bash
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/local_setup.sh
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/local_setup.zsh
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/local_setup.dsv
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/package.dsv
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/ament_index/resource_index/packages/dynamixel_wrapper
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/cmake/dynamixel_wrapperConfig.cmake
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/cmake/dynamixel_wrapperConfig-version.cmake
+-- Installing: /home/colcon_ws/src/dynamixel_wrapper/install/dynamixel_wrapper/share/dynamixel_wrapper/package.xml

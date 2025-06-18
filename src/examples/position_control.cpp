@@ -26,22 +26,36 @@ int main(int argc, char **argv)
     dynamixel_wrapper::dynamixel_wrapper_base dxl_base(port_name, baudrate);
 
     // Dynamixel motor setting
-    int motor_id = 14;
-    int operating_mode = 5;  // e.g., position control
-    dynamixel_wrapper::dynamixel_wrapper motor0(motor_id, dxl_base, dynamixel_wrapper::XM430_W350_R, operating_mode);
+    int motor0_id = 11;
+    int motor1_id = 12;
+    int motor2_id = 13;
+    int operating_mode = 5;  // e.g., current base position control
+    dynamixel_wrapper::dynamixel_wrapper motor0(motor0_id, dxl_base, dynamixel_wrapper::XM430_W350_R, operating_mode);
+    dynamixel_wrapper::dynamixel_wrapper motor1(motor1_id, dxl_base, dynamixel_wrapper::XM430_W350_R, operating_mode);
+    dynamixel_wrapper::dynamixel_wrapper motor2(motor2_id, dxl_base, dynamixel_wrapper::XM430_W350_R, operating_mode);
     // motor configuration
     motor0.setTorqueEnable(false);
-    motor0.setCurrentLimit(40.0);
+    motor0.setCurrentLimit(300.0);
     motor0.setTorqueEnable(true);
+
+    motor1.setTorqueEnable(false);
+    motor1.setCurrentLimit(300.0);
+    motor1.setTorqueEnable(true);
+
+    motor2.setTorqueEnable(false);
+    motor2.setCurrentLimit(300.0);
+    motor2.setTorqueEnable(true);
 
     double goal_angle = 90.0;
 
     while (rclcpp::ok()) {
         motor0.setGoalPosition(goal_angle);
-
-        if (std::abs(motor0.getPresentPosition() - goal_angle) < 1.0) {
+        motor1.setGoalPosition(180.0);
+        motor2.setGoalPosition(90.0);
+     
+        /**if (std::abs(motor0.getPresentPosition() - goal_angle) < 1.0) {
             goal_angle *= -1;
-        }
+        }*/
 
         RCLCPP_INFO(node->get_logger(), "Motor angle: %.2f [deg]", motor0.getPresentPosition());
 

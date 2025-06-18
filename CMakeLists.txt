@@ -30,10 +30,18 @@ ament_target_dependencies(position_node
   dynamixel_sdk
 )
 
+add_executable(positioning_node src/examples/positioning_control.cpp)
+target_link_libraries(positioning_node ${PROJECT_NAME})
+ament_target_dependencies(positioning_node
+  rclcpp
+  dynamixel_sdk
+)
+
 # インストール設定
 install(TARGETS
   ${PROJECT_NAME}
   position_node
+  positioning_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
