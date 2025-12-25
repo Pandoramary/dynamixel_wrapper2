@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
+find_package(std_msgs REQUIRED)
 
 include_directories(
   include
@@ -20,6 +21,7 @@ add_library(${PROJECT_NAME}
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   dynamixel_sdk
+  std_msgs
 )
 
 # 実行ノードのビルド（例：position_control.cpp）
@@ -28,6 +30,7 @@ target_link_libraries(position_node ${PROJECT_NAME})
 ament_target_dependencies(position_node
   rclcpp
   dynamixel_sdk
+  std_msgs
 )
 
 add_executable(positioning_node src/examples/positioning_control.cpp)
@@ -35,6 +38,7 @@ target_link_libraries(positioning_node ${PROJECT_NAME})
 ament_target_dependencies(positioning_node
   rclcpp
   dynamixel_sdk
+  std_msgs
 )
 
 # インストール設定
