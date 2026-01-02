@@ -39,6 +39,17 @@ ament_target_dependencies(positioning_node
   rclcpp
   dynamixel_sdk
   std_msgs
+<<<<<<< HEAD
+=======
+)
+
+add_executable(positioning_control_subscriber_node src/examples/position_control_subscriber.cpp)
+target_link_libraries(positioning_control_subscriber_node ${PROJECT_NAME})
+ament_target_dependencies(positioning_control_subscriber_node
+  rclcpp
+  dynamixel_sdk
+  std_msgs
+>>>>>>> 5ac5b7b (2026/01/02 よくわからんけどコミット)
 )
 
 # インストール設定
@@ -46,6 +57,7 @@ install(TARGETS
   ${PROJECT_NAME}
   position_node
   positioning_node
+  positioning_control_subscriber_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
